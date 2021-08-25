@@ -1,0 +1,7 @@
+C:\Users\kbadmin\Documents\Programacao\CSharp_EntendendoHerancaEInterface\CSharp_Heranca-e-interface\bin\Debug\CSharp_Heranca-e-interface.exe.config
+C:\Users\kbadmin\Documents\Programacao\CSharp_EntendendoHerancaEInterface\CSharp_Heranca-e-interface\bin\Debug\CSharp_Heranca-e-interface.exe
+C:\Users\kbadmin\Documents\Programacao\CSharp_EntendendoHerancaEInterface\CSharp_Heranca-e-interface\bin\Debug\CSharp_Heranca-e-interface.pdb
+C:\Users\kbadmin\Documents\Programacao\CSharp_EntendendoHerancaEInterface\CSharp_Heranca-e-interface\obj\Debug\CSharp_Heranca-e-interface.csproj.AssemblyReference.cache
+C:\Users\kbadmin\Documents\Programacao\CSharp_EntendendoHerancaEInterface\CSharp_Heranca-e-interface\obj\Debug\CSharp_Heranca-e-interface.csproj.CoreCompileInputs.cache
+C:\Users\kbadmin\Documents\Programacao\CSharp_EntendendoHerancaEInterface\CSharp_Heranca-e-interface\obj\Debug\CSharp_Heranca-e-interface.exe
+C:\Users\kbadmin\Documents\Programacao\CSharp_EntendendoHerancaEInterface\CSharp_Heranca-e-interface\obj\Debug\CSharp_Heranca-e-interface.pdb
