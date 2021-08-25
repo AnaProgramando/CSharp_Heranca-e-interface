@@ -16,8 +16,16 @@ namespace CSharp_Heranca_e_interface
             fulano.CPF = "123.456.789-10";
             fulano.Salario = 2000;
 
+            Diretor beltrano = new Diretor();
+            beltrano.Nome = "Beltrano";
+            beltrano.CPF = "109.876.543-21";
+            beltrano.Salario = 5000;
+
             Console.WriteLine(fulano.Nome);
-            Console.WriteLine(fulano.GetBonificacao());                  
+            Console.WriteLine(fulano.GetBonificacao());
+
+            Console.WriteLine(beltrano.Nome);
+            Console.WriteLine(beltrano.GetBonificacao());
 
             Console.ReadLine();
         }
