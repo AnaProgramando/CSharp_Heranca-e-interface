@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace CSharp_Heranca_e_interface.Funcionarios
 {
-    public class Diretor : Autenticavel
+    public class Diretor : Funcionario, Autenticavel
     {
         public Diretor(string cpf) : base(5000, cpf)
         {
             //O CPF é recebido no construtor de Diretor(), e ao chamar o construtor da classe base, passa o argumento cpf. 
+        }
+
+        public bool Autenticar(string senha)
+        {
+            return true;
         }
 
         public override void AumentarSalario()
