@@ -13,18 +13,18 @@ namespace CSharp_Heranca_e_interface
         {
             GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
 
-            Funcionario fulano = new Funcionario();
+            Funcionario fulano = new Funcionario("123.456.789-10");
             fulano.Nome = "Fulano";
-            fulano.CPF = "123.456.789-10";
             fulano.Salario = 2000;
 
+            Console.WriteLine("Total de funcionários:  " + Funcionario.TotalFuncionarios);
             gerenciador.Registrar(fulano);
 
-            Diretor beltrano = new Diretor();
+            Diretor beltrano = new Diretor("109.876.543-21");
             beltrano.Nome = "Beltrano";
-            beltrano.CPF = "109.876.543-21";
             beltrano.Salario = 5000;
 
+            Console.WriteLine("Total de funcionários:  " + Funcionario.TotalFuncionarios);
             gerenciador.Registrar(beltrano);
 
             Console.WriteLine("Nome: " + fulano.Nome);
