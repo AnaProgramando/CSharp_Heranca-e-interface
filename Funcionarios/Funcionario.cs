@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp_Heranca_e_interface.Funcionarios
 {
-    public class Funcionario
+    public abstract class Funcionario
     {
         public static int TotalFuncionarios { get; private set; }
 
