@@ -1,4 +1,5 @@
 ﻿using CSharp_Heranca_e_interface.Funcionarios;
+using CSharp_Heranca_e_interface.Sistemas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +12,27 @@ namespace CSharp_Heranca_e_interface
     {
         static void Main(string[] args)
         {
-            CalcularBonificacao();
+            // CalcularBonificacao();
+
+            UsarSistema();
 
             Console.ReadLine();
+        }
+
+        public static void UsarSistema()
+        {
+            SistemaInterno sistemaInterno = new SistemaInterno();
+
+            Diretor beltrano = new Diretor("123.456.789-22");
+            beltrano.Nome = "Beltrano";
+            beltrano.Senha = "123";
+                     
+            Gerente ana = new Gerente("123.456.789-44");
+            ana.Nome = "Ana";
+            ana.Senha = "321";
+
+            sistemaInterno.Logar(beltrano, "123");
+            sistemaInterno.Logar(ana, "321");
         }
 
         public static void CalcularBonificacao()
