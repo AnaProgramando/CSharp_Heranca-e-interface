@@ -10,7 +10,7 @@ namespace CSharp_Heranca_e_interface.Funcionarios
     {        
         public override double GetBonificacao()
         {
-            return Salario;
+            return Salario + base.GetBonificacao();
         }
     }
 }
