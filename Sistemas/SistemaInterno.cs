@@ -9,7 +9,7 @@ namespace CSharp_Heranca_e_interface.Sistemas
 {
     public class SistemaInterno
     {
-        public bool Logar(Diretor funcionario, string senha)
+        public bool Logar(Autenticavel funcionario, string senha)
         {
             bool usuarioAutenticado = funcionario.Autenticar(senha);
 
@@ -23,22 +23,6 @@ namespace CSharp_Heranca_e_interface.Sistemas
                 Console.WriteLine("Senha incorreta.");
                 return false;
             }
-        }
-
-        public bool Logar(Gerente funcionario, string senha)
-        {
-            bool usuarioAutenticado = funcionario.Autenticar(senha);
-
-            if (usuarioAutenticado)
-            {
-                Console.WriteLine("Bem vinda(o) ao sistema!");
-                return true;
-            }
-            else
-            {
-                Console.WriteLine("Senha incorreta.");
-                return false;
-            }
-        }
+        }        
     }
 }

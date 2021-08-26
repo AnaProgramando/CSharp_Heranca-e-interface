@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharp_Heranca_e_interface.Sistemas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,18 +7,11 @@ using System.Threading.Tasks;
 
 namespace CSharp_Heranca_e_interface.Funcionarios
 {
-    public class Gerente : Funcionario
+    public class Gerente : Autenticavel
     {
         public Gerente(string cpf) : base(4000, cpf)
         {
-        }
-
-        public string Senha { get; set; }
-                
-        public bool Autenticar(string senha)
-        {
-            return Senha == senha;
-        }
+        }              
 
         public override void AumentarSalario()
         {
