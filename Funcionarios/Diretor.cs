@@ -22,7 +22,7 @@ namespace CSharp_Heranca_e_interface.Funcionarios
 
         public override double GetBonificacao()
         {
-            return Salario + base. GetBonificacao();
+            return Salario * 0.5;
         }
     }
 }
