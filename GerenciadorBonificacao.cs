@@ -16,11 +16,6 @@ namespace CSharp_Heranca_e_interface
             _totalBonificacao += funcionario.GetBonificacao();
         }
 
-        public void Registrar(Diretor diretor)
-        {
-            _totalBonificacao += diretor.GetBonificacao();
-        }
-
         public double GetTotalBonificacao()
         {
             return _totalBonificacao;

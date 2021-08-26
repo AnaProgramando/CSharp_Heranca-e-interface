@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace CSharp_Heranca_e_interface.Funcionarios
 {
-    public class Diretor
-    {
-        public string Nome { get; set; }
-        public string CPF { get; set; }
-        public double Salario { get; set; }
-
+    public class Diretor : Funcionario
+    {        
         public double GetBonificacao()
         {
             return Salario;
