@@ -24,16 +24,10 @@ namespace CSharp_Heranca_e_interface.Funcionarios
             TotalFuncionarios++;
         }
 
-        public virtual void AumentarSalario()
-        {
-            Salario *= 1.1;
-            // É o mesmo que fazer: Salario = Salario + (Salario * 0.1)
-            // É o mesmo que fazer: Salario = * 1.1;
-        }
+        // Necessário sobrescrever o método AumentarSalario, pois cada cargo tem uma regra específica
+        public abstract void AumentarSalario();
 
-        public virtual double GetBonificacao()
-        {
-            return Salario * 0.10;
-        }
+        // Necessário sobrescrever o método GetBonificacao, pois cada cargo tem uma regra específica
+        public abstract double GetBonificacao();
     }
 }

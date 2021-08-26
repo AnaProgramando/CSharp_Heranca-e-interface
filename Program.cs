@@ -32,10 +32,14 @@ namespace CSharp_Heranca_e_interface
             Gerente ana = new Gerente("123.456.789-44");
             ana.Nome = "Ana";
 
+            Desenvolvedor beatriz = new Desenvolvedor("123.456.789-55");
+            beatriz.Nome = "Beatriz";
+
             gerenciadorBonificacao.Registrar(fulano);
             gerenciadorBonificacao.Registrar(beltrano);
             gerenciadorBonificacao.Registrar(sicrano);
             gerenciadorBonificacao.Registrar(ana);
+            gerenciadorBonificacao.Registrar(beatriz);
 
             Console.WriteLine("Total de bonificações: R$ " + gerenciadorBonificacao.GetTotalBonificacao());
         }
