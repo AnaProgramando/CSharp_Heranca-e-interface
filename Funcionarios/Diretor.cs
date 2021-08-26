@@ -8,9 +8,16 @@ namespace CSharp_Heranca_e_interface.Funcionarios
 {
     public class Diretor : Funcionario
     {        
-        public Diretor(string cpf) : base(cpf)
+        public Diretor(string cpf) : base(5000, cpf)
         {
-            Console.WriteLine("Aqui chamo o CPF");
+            //O CPF é recebido no construtor de Diretor(), e ao chamar o construtor da classe base, passa o argumento cpf. 
+        }
+
+        public override void AumentarSalario()
+        {
+            Salario *= 1.15;
+            // É o mesmo que fazer: Salario = Salario + (Salario * 0.15)
+            // É o mesmo que fazer: Salario = * 1.15;
         }
 
         public override double GetBonificacao()

@@ -12,13 +12,23 @@ namespace CSharp_Heranca_e_interface.Funcionarios
 
         public string Nome { get; set; }
         public string CPF { get; private set; }
-        public double Salario { get; set; }
+        public double Salario { get; protected set; }
 
-        public Funcionario(string cpf)
+        public Funcionario(double salario, string cpf)
         {
             CPF = cpf;
+            
+            //A propriedade Salário é igual ao argumento salário do construtor 
+            Salario = salario;
 
             TotalFuncionarios++;
+        }
+
+        public virtual void AumentarSalario()
+        {
+            Salario *= 1.1;
+            // É o mesmo que fazer: Salario = Salario + (Salario * 0.1)
+            // É o mesmo que fazer: Salario = * 1.1;
         }
 
         public virtual double GetBonificacao()
