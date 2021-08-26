@@ -10,22 +10,30 @@ namespace CSharp_Heranca_e_interface
     class Program
     {
         static void Main(string[] args)
-        {            
+        {
+            GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
+
             Funcionario fulano = new Funcionario();
             fulano.Nome = "Fulano";
             fulano.CPF = "123.456.789-10";
             fulano.Salario = 2000;
+
+            gerenciador.Registrar(fulano);
 
             Diretor beltrano = new Diretor();
             beltrano.Nome = "Beltrano";
             beltrano.CPF = "109.876.543-21";
             beltrano.Salario = 5000;
 
-            Console.WriteLine(fulano.Nome);
-            Console.WriteLine(fulano.GetBonificacao());
+            gerenciador.Registrar(beltrano);
 
-            Console.WriteLine(beltrano.Nome);
-            Console.WriteLine(beltrano.GetBonificacao());
+            Console.WriteLine("Nome: " + fulano.Nome);
+            Console.WriteLine("Valor da bonificação: R$ " + fulano.GetBonificacao() + "\r\n");
+
+            Console.WriteLine("Nome: " + beltrano.Nome);
+            Console.WriteLine("Valor da bonificação: R$ " + beltrano.GetBonificacao() + "\r\n");
+
+            Console.WriteLine("Total de bonificações: R$ " + gerenciador.GetTotalBonificacao());
 
             Console.ReadLine();
         }
