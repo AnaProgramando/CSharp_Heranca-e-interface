@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharp_Heranca_e_interface.Funcionarios
 {
-    public class Gerente : Autenticavel
+    public class Gerente : FuncionarioAutenticavel
     {
         public Gerente(string cpf) : base(4000, cpf)
         {

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharp_Heranca_e_interface.Sistemas
 {
-    public interface Autenticavel
+    public interface IAutenticavel
     {
         bool Autenticar(string senha);
     }

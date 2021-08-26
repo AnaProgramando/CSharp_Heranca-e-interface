@@ -5,12 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp_Heranca_e_interface
+namespace CSharp_Heranca_e_interface.Funcionarios
 {
-    class ParceiroComercial : IAutenticavel
+    public abstract class FuncionarioAutenticavel : Funcionario, IAutenticavel
     {
         public string Senha { get; set; }
-        
+
+        public FuncionarioAutenticavel(double salario, string cpf)
+            : base(salario, cpf)
+        {
+
+        }
+
         public bool Autenticar(string senha)
         {
             return Senha == senha;

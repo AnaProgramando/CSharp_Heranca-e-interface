@@ -26,13 +26,20 @@ namespace CSharp_Heranca_e_interface
             Diretor beltrano = new Diretor("123.456.789-22");
             beltrano.Nome = "Beltrano";
             beltrano.Senha = "123";
-                     
+
+            sistemaInterno.Logar(beltrano, "123");
+
             Gerente ana = new Gerente("123.456.789-44");
             ana.Nome = "Ana";
             ana.Senha = "321";
 
-            sistemaInterno.Logar(beltrano, "123");
             sistemaInterno.Logar(ana, "321");
+
+            ParceiroComercial parceiro = new ParceiroComercial();
+            parceiro.Senha = "12345";
+
+            sistemaInterno.Logar(parceiro, "12345");        
+            
         }
 
         public static void CalcularBonificacao()
